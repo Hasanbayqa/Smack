@@ -18,8 +18,20 @@
 		37ED9FA32101A00700C4339E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED9FA22101A00700C4339E /* Constants.swift */; };
 		37ED9FA52101A94600C4339E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED9FA42101A94600C4339E /* LoginVC.swift */; };
 		37ED9FA72101AE2E00C4339E /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED9FA62101AE2E00C4339E /* CreateAccountVC.swift */; };
+		37ED9FAF2102C85C00C4339E /* SmackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED9FAE2102C85C00C4339E /* SmackUITests.swift */; };
+		37ED9FB82105907200C4339E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED9FB72105907200C4339E /* AuthService.swift */; };
 		BD15C8AB09354B62256B34F0 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A26AF4156A474B8762BAF45 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37ED9FB12102C85C00C4339E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37ED9B2C21017AA5006B63B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37ED9B3321017AA5006B63B1;
+			remoteInfo = Smack;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A26AF4156A474B8762BAF45 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +51,10 @@
 		37ED9FA22101A00700C4339E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		37ED9FA42101A94600C4339E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		37ED9FA62101AE2E00C4339E /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		37ED9FAC2102C85C00C4339E /* SmackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ED9FAE2102C85C00C4339E /* SmackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmackUITests.swift; sourceTree = "<group>"; };
+		37ED9FB02102C85C00C4339E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37ED9FB72105907200C4339E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CB90E0E1F44A99CF692840D4 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +67,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37ED9FA92102C85C00C4339E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				37ED9B3621017AA5006B63B1 /* Smack */,
+				37ED9FAD2102C85C00C4339E /* SmackUITests */,
 				37ED9B3521017AA5006B63B1 /* Products */,
 				813AD4788DF718DF7777B810 /* Pods */,
 				BFD9635AD9546C6F96063A4A /* Frameworks */,
@@ -68,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				37ED9B3421017AA5006B63B1 /* Smack.app */,
+				37ED9FAC2102C85C00C4339E /* SmackUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +100,7 @@
 		37ED9B3621017AA5006B63B1 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				37ED9FB62105903F00C4339E /* Services */,
 				37ED9FA121019FE900C4339E /* Utilities */,
 				37ED9B702101871A006B63B1 /* Model */,
 				37ED9B6F2101870D006B63B1 /* View */,
@@ -133,6 +159,23 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		37ED9FAD2102C85C00C4339E /* SmackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				37ED9FAE2102C85C00C4339E /* SmackUITests.swift */,
+				37ED9FB02102C85C00C4339E /* Info.plist */,
+			);
+			path = SmackUITests;
+			sourceTree = "<group>";
+		};
+		37ED9FB62105903F00C4339E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				37ED9FB72105907200C4339E /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		813AD4788DF718DF7777B810 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +215,24 @@
 			productReference = 37ED9B3421017AA5006B63B1 /* Smack.app */;
 			productType = "com.apple.product-type.application";
 		};
+		37ED9FAB2102C85C00C4339E /* SmackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37ED9FB32102C85C00C4339E /* Build configuration list for PBXNativeTarget "SmackUITests" */;
+			buildPhases = (
+				37ED9FA82102C85C00C4339E /* Sources */,
+				37ED9FA92102C85C00C4339E /* Frameworks */,
+				37ED9FAA2102C85C00C4339E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37ED9FB22102C85C00C4339E /* PBXTargetDependency */,
+			);
+			name = SmackUITests;
+			productName = SmackUITests;
+			productReference = 37ED9FAC2102C85C00C4339E /* SmackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -185,6 +246,10 @@
 					37ED9B3321017AA5006B63B1 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
+					};
+					37ED9FAB2102C85C00C4339E = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 37ED9B3321017AA5006B63B1;
 					};
 				};
 			};
@@ -202,6 +267,7 @@
 			projectRoot = "";
 			targets = (
 				37ED9B3321017AA5006B63B1 /* Smack */,
+				37ED9FAB2102C85C00C4339E /* SmackUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +280,13 @@
 				37ED9B4221017AA7006B63B1 /* LaunchScreen.storyboard in Resources */,
 				37ED9B3F21017AA7006B63B1 /* Assets.xcassets in Resources */,
 				37ED9B3D21017AA5006B63B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37ED9FAA2102C85C00C4339E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +345,7 @@
 				37ED9B7421018772006B63B1 /* ChannelVC.swift in Sources */,
 				37ED9B722101875F006B63B1 /* ChatVC.swift in Sources */,
 				37ED9FA72101AE2E00C4339E /* CreateAccountVC.swift in Sources */,
+				37ED9FB82105907200C4339E /* AuthService.swift in Sources */,
 				37ED9FA52101A94600C4339E /* LoginVC.swift in Sources */,
 				37ED9FA0210195C900C4339E /* GradientView.swift in Sources */,
 				37ED9B3821017AA5006B63B1 /* AppDelegate.swift in Sources */,
@@ -280,7 +354,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37ED9FA82102C85C00C4339E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37ED9FAF2102C85C00C4339E /* SmackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37ED9FB22102C85C00C4339E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37ED9B3321017AA5006B63B1 /* Smack */;
+			targetProxy = 37ED9FB12102C85C00C4339E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		37ED9B3B21017AA5006B63B1 /* Main.storyboard */ = {
@@ -457,6 +547,42 @@
 			};
 			name = Release;
 		};
+		37ED9FB42102C85C00C4339E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hasansh.SmackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Smack;
+			};
+			name = Debug;
+		};
+		37ED9FB52102C85C00C4339E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hasansh.SmackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Smack;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -474,6 +600,15 @@
 			buildConfigurations = (
 				37ED9B4721017AA7006B63B1 /* Debug */,
 				37ED9B4821017AA7006B63B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37ED9FB32102C85C00C4339E /* Build configuration list for PBXNativeTarget "SmackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37ED9FB42102C85C00C4339E /* Debug */,
+				37ED9FB52102C85C00C4339E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
