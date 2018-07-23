@@ -20,6 +20,7 @@
 		37ED9FA72101AE2E00C4339E /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED9FA62101AE2E00C4339E /* CreateAccountVC.swift */; };
 		37ED9FAF2102C85C00C4339E /* SmackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED9FAE2102C85C00C4339E /* SmackUITests.swift */; };
 		37ED9FB82105907200C4339E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED9FB72105907200C4339E /* AuthService.swift */; };
+		37ED9FBA2105A39F00C4339E /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED9FB92105A39F00C4339E /* RoundedButton.swift */; };
 		BD15C8AB09354B62256B34F0 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A26AF4156A474B8762BAF45 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		37ED9FAE2102C85C00C4339E /* SmackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmackUITests.swift; sourceTree = "<group>"; };
 		37ED9FB02102C85C00C4339E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37ED9FB72105907200C4339E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		37ED9FB92105A39F00C4339E /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		CB90E0E1F44A99CF692840D4 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				37ED9F9F210195C900C4339E /* GradientView.swift */,
+				37ED9FB92105A39F00C4339E /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37ED9B7421018772006B63B1 /* ChannelVC.swift in Sources */,
+				37ED9FBA2105A39F00C4339E /* RoundedButton.swift in Sources */,
 				37ED9B722101875F006B63B1 /* ChatVC.swift in Sources */,
 				37ED9FA72101AE2E00C4339E /* CreateAccountVC.swift in Sources */,
 				37ED9FB82105907200C4339E /* AuthService.swift in Sources */,

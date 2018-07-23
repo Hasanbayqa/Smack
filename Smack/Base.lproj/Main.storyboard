@@ -193,7 +193,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMp-Ny-MO1">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMp-Ny-MO1" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62" y="331" width="250" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -201,6 +201,11 @@
                                 <state key="normal" title="Log in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1df-B0-t22">
                                 <rect key="frame" x="88" y="379" width="199" height="38"/>
@@ -291,7 +296,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKU-jP-1uW">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKU-jP-1uW" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62" y="597" width="250" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -299,6 +304,14 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccntPressed:" destination="laV-F1-lu7" eventType="touchUpInside" id="iVY-vh-YTk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrq-48-Qsf">
                                 <rect key="frame" x="137" y="299" width="100" height="130"/>
@@ -311,6 +324,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="uvz-nl-ZbL" eventType="touchUpInside" id="Exe-y5-xU6"/>
+                                    <action selector="pickAvatarPressed:" destination="laV-F1-lu7" eventType="touchUpInside" id="dK6-7G-7PI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Id9-c8-COs">
@@ -322,7 +336,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="hZ9-Vv-tDj">
                                 <rect key="frame" x="62" y="123" width="250" height="136"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C9M-zR-gPI">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C9M-zR-gPI">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
                                         <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -336,7 +350,7 @@
                                             <constraint firstAttribute="width" constant="250" id="m4t-HM-H3j"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vts-ZM-Vf2">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vts-ZM-Vf2">
                                         <rect key="frame" x="0.0" y="50" width="250" height="20"/>
                                         <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -373,7 +387,7 @@
                                     <constraint firstAttribute="width" constant="100" id="ffs-PW-czm"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwK-86-3fZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwK-86-3fZ" userLabel="Choose avatar">
                                 <rect key="frame" x="343" y="28" width="22" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="DKX-0G-lAk"/>
@@ -393,6 +407,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="uvz-nl-ZbL" eventType="touchUpInside" id="vab-Wq-Ptd"/>
+                                    <action selector="pickBGcolorPressed:" destination="laV-F1-lu7" eventType="touchUpInside" id="A4E-nV-NyT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -415,13 +430,17 @@
                         <viewLayoutGuide key="safeArea" id="PIc-e4-6VY"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="vts-ZM-Vf2" id="j7z-m1-FBP"/>
+                        <outlet property="iserImg" destination="mQn-Nl-eQH" id="OkU-zm-AaF"/>
+                        <outlet property="passwordTxt" destination="Z1X-cD-Kv7" id="bQ1-uc-08j"/>
+                        <outlet property="usernameTxt" destination="C9M-zR-gPI" id="43u-eQ-Yzt"/>
                         <segue destination="qSK-Qb-1EA" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="tSI-zN-JnX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GuE-gZ-3fb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="qSK-Qb-1EA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2223.1999999999998" y="-324.28785607196403"/>
+            <point key="canvasLocation" x="2647" y="-690"/>
         </scene>
     </scenes>
     <resources>
