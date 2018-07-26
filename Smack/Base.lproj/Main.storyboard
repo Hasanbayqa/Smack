@@ -113,7 +113,7 @@
                                     <action selector="loginBtnPressed:" destination="Rui-yS-p0Q" eventType="touchUpInside" id="bc4-g0-WeR"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Xbm-jg-LiF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Xbm-jg-LiF" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="10" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="Pt6-Tc-DQv"/>
@@ -306,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJP-um-uBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1416.8" y="-475.41229385307349"/>
+            <point key="canvasLocation" x="1292" y="-484"/>
         </scene>
         <!--Create AccountVC-->
         <scene sceneID="H1F-v8-uKq">
@@ -426,17 +426,22 @@
                                     <action selector="pickBGColorPressed:" destination="laV-F1-lu7" eventType="touchUpInside" id="jj9-eI-bOS"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="yFG-qB-NqY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="yFG-qB-NqY" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="137" y="299" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="0Wd-EU-2QA"/>
                                     <constraint firstAttribute="height" constant="100" id="IFy-YW-z1X"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="HOv-gz-wVo">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="yFG-qB-NqY" firstAttribute="centerX" secondItem="RQF-bw-XwN" secondAttribute="centerX" id="0YU-PF-Net"/>
+                            <constraint firstItem="HOv-gz-wVo" firstAttribute="centerX" secondItem="RQF-bw-XwN" secondAttribute="centerX" id="252-Vp-HYb"/>
                             <constraint firstItem="hZ9-Vv-tDj" firstAttribute="centerX" secondItem="RQF-bw-XwN" secondAttribute="centerX" id="3XO-Cv-hGS"/>
                             <constraint firstItem="N6s-2I-VyK" firstAttribute="width" secondItem="yFG-qB-NqY" secondAttribute="width" id="8he-BM-oxy"/>
                             <constraint firstItem="yFG-qB-NqY" firstAttribute="top" secondItem="hZ9-Vv-tDj" secondAttribute="bottom" constant="40" id="Ajz-PC-WGS"/>
@@ -444,6 +449,7 @@
                             <constraint firstItem="EvL-JS-tZt" firstAttribute="centerX" secondItem="RQF-bw-XwN" secondAttribute="centerX" id="DSZ-nZ-rPg"/>
                             <constraint firstItem="qKU-jP-1uW" firstAttribute="centerX" secondItem="RQF-bw-XwN" secondAttribute="centerX" id="FHk-ie-jEW"/>
                             <constraint firstItem="PIc-e4-6VY" firstAttribute="trailing" secondItem="wwK-86-3fZ" secondAttribute="trailing" id="Vta-Dj-rZ9"/>
+                            <constraint firstItem="HOv-gz-wVo" firstAttribute="centerY" secondItem="RQF-bw-XwN" secondAttribute="centerY" constant="-100" id="ZOB-Nj-wg7"/>
                             <constraint firstItem="EvL-JS-tZt" firstAttribute="top" secondItem="N6s-2I-VyK" secondAttribute="bottom" constant="4" id="hEd-wk-Zlw"/>
                             <constraint firstItem="hZ9-Vv-tDj" firstAttribute="top" secondItem="Id9-c8-COs" secondAttribute="bottom" constant="40" id="oeu-6p-yoM"/>
                             <constraint firstItem="N6s-2I-VyK" firstAttribute="top" secondItem="yFG-qB-NqY" secondAttribute="top" id="t1b-AZ-2sE"/>
@@ -457,6 +463,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="vts-ZM-Vf2" id="j7z-m1-FBP"/>
                         <outlet property="passwordTxt" destination="Z1X-cD-Kv7" id="bQ1-uc-08j"/>
+                        <outlet property="spinner" destination="HOv-gz-wVo" id="bC8-8H-v37"/>
                         <outlet property="userImg" destination="yFG-qB-NqY" id="mMv-QM-aq8"/>
                         <outlet property="usernameTxt" destination="C9M-zR-gPI" id="43u-eQ-Yzt"/>
                         <segue destination="qSK-Qb-1EA" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="tSI-zN-JnX"/>

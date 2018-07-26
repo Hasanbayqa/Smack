@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37C9BC5A2109B279001E01DF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C9BC592109B279001E01DF /* CircleImage.swift */; };
 		37ED9B3821017AA5006B63B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED9B3721017AA5006B63B1 /* AppDelegate.swift */; };
 		37ED9B3D21017AA5006B63B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37ED9B3B21017AA5006B63B1 /* Main.storyboard */; };
 		37ED9B3F21017AA7006B63B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37ED9B3E21017AA7006B63B1 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		0A26AF4156A474B8762BAF45 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB048050E25DA232BFC83B0 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
+		37C9BC592109B279001E01DF /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		37ED9B3421017AA5006B63B1 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37ED9B3721017AA5006B63B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37ED9B3C21017AA5006B63B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				37ED9F9F210195C900C4339E /* GradientView.swift */,
 				37ED9FB92105A39F00C4339E /* RoundedButton.swift */,
 				37ED9FBF2106D97800C4339E /* AvatarCell.swift */,
+				37C9BC592109B279001E01DF /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				37ED9B7421018772006B63B1 /* ChannelVC.swift in Sources */,
 				37ED9FBE2106D3F900C4339E /* AvatarPickerVC.swift in Sources */,
 				37ED9FBA2105A39F00C4339E /* RoundedButton.swift in Sources */,
+				37C9BC5A2109B279001E01DF /* CircleImage.swift in Sources */,
 				37ED9B722101875F006B63B1 /* ChatVC.swift in Sources */,
 				37ED9FBC2105B76F00C4339E /* UserDataService.swift in Sources */,
 				37ED9FA72101AE2E00C4339E /* CreateAccountVC.swift in Sources */,
