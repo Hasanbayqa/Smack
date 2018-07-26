@@ -20,6 +20,7 @@ class CreateAccountVC: UIViewController {
     //Variables
     var avatarName = "profileDefault"
     var avatarColor = "[0.5, 0.5, 0,5, 1]"
+    var bgColor : UIColor?
     
     
     override func viewDidLoad() {
@@ -29,6 +30,7 @@ class CreateAccountVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if UserDataService.instance.avatarName != "" {
+            print(UserDataService.instance.avatarName)
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
             avatarName = UserDataService.instance.avatarName
         }
@@ -56,15 +58,24 @@ class CreateAccountVC: UIViewController {
         }
     }
     
+    
     @IBAction func pickAvatarPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
     }
     
-    @IBAction func pickBGcolorPressed(_ sender: Any) {
+    
+    @IBAction func pickBGColorPressed(_ sender: Any) {
+        let r = CGFloat(arc4random_uniform(255)) / 255
+        let g = CGFloat(arc4random_uniform(255)) / 255
+        let b = CGFloat(arc4random_uniform(255)) / 255
+        
+        bgColor = UIColor(red: r, green: g, blue: b, alpha: 1)
+        self.userImg.backgroundColor = bgColor
     }
     
-    @IBAction func closePressed(_ sender: Any) {
-        performSegue(withIdentifier: UNWIND, sender: nil)
-    }
+    
+  @IBAction func closePressed(_ sender: Any) {
+       performSegue(withIdentifier: UNWIND, sender: nil)
+   }
     
 }

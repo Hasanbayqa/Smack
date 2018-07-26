@@ -2,8 +2,8 @@
 //  AuthService.swift
 //  Smack
 //
-//  Created by Khasan Shirmatov on 7/22/18.
-//  Copyright © 2018 Khasan Shirmatov. All rights reserved.
+//  Created by Jonny B on 7/17/17.
+//  Copyright © 2017 Jonny B. All rights reserved.
 //
 
 import Foundation
@@ -11,11 +11,12 @@ import Alamofire
 import SwiftyJSON
 
 class AuthService {
+    
     static let instance = AuthService()
     
     let defaults = UserDefaults.standard
     
-    var isLoggedIn: Bool {
+    var isLoggedIn : Bool {
         get {
             return defaults.bool(forKey: LOGGED_IN_KEY)
         }
@@ -100,7 +101,7 @@ class AuthService {
         ]
         
         let header = [
-            "Authorization": "Bearer\(AuthService.instance.authToken)",
+            "Authorization":"Bearer \(AuthService.instance.authToken)",
             "Content-Type": "application/json; charset=utf-8"
         ]
         
@@ -114,7 +115,8 @@ class AuthService {
                 let avatarName = json["avatarName"].stringValue
                 let email = json["email"].stringValue
                 let name = json["name"].stringValue
-                UserDataService.instance.setUserData(id: id, color: avatarColor, avatarName: avatarName, email: email, name: name)
+                
+                UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
                 completion(true)
                 
             } else {
@@ -124,7 +126,14 @@ class AuthService {
         }
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
-
-
-
