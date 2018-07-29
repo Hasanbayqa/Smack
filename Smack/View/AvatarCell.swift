@@ -18,7 +18,7 @@ class AvatarCell: UICollectionViewCell {
     @IBOutlet weak var avatarImg: UIImageView!
     
     override func awakeFromNib() {
-//        super.awakeFromNib()
+        super.awakeFromNib()
         setUpView()
     }
     

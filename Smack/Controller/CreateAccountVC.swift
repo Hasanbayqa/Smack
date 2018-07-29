@@ -33,7 +33,6 @@ class CreateAccountVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if UserDataService.instance.avatarName != "" {
-            print(UserDataService.instance.avatarName)
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
             avatarName = UserDataService.instance.avatarName
             if avatarName.contains("light") && bgColor == nil {
@@ -48,12 +47,12 @@ class CreateAccountVC: UIViewController {
         
         guard let name = usernameTxt.text, usernameTxt.text != "" else { return }
         guard let email = emailTxt.text, emailTxt.text != "" else { return }
-        guard let password = passwordTxt.text, passwordTxt.text != "" else { return }
+        guard let pass = passwordTxt.text, passwordTxt.text != "" else { return }
         
         
-        AuthService.instance.registerUser(email: email, password: password) { (success) in
+        AuthService.instance.registerUser(email: email, password: pass) { (success) in
             if success {
-                AuthService.instance.loginUser(email: email, password: password, completion: { (success) in
+                AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
                     if success {
                         AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
                             if success {

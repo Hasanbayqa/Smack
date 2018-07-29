@@ -20,8 +20,6 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func logoutPressed(_ sender: Any) {
