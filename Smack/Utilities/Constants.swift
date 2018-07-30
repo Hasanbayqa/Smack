@@ -39,7 +39,7 @@ let USER_EMAIL = "userEmail"
 // Headers
 
 let HEADER = [
-    "Content-Type": "application/json=utf-8"
+    "Content-Type": "application/json; charset=utf-8"
 ]
 
 let BEARER_HEADER = [

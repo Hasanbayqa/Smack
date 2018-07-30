@@ -20,6 +20,7 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        
     }
 
     @IBAction func logoutPressed(_ sender: Any) {
