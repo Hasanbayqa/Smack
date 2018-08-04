@@ -277,7 +277,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfF-4X-Yrb">
-                                <rect key="frame" x="353" y="28" width="22" height="22"/>
+                                <rect key="frame" x="333" y="28" width="22" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="YKf-Ak-tWf"/>
                                     <constraint firstAttribute="width" constant="22" id="l5p-TK-4RB"/>
@@ -303,7 +303,7 @@
                             <constraint firstItem="dEm-xh-m3w" firstAttribute="centerX" secondItem="Svj-vX-mKC" secondAttribute="centerX" id="RRk-X7-uyO"/>
                             <constraint firstItem="1df-B0-t22" firstAttribute="top" secondItem="dMp-Ny-MO1" secondAttribute="bottom" id="S9N-7V-vef"/>
                             <constraint firstItem="dMp-Ny-MO1" firstAttribute="centerX" secondItem="Svj-vX-mKC" secondAttribute="centerX" id="SKz-Hl-sGe"/>
-                            <constraint firstItem="69d-Pj-qUl" firstAttribute="trailing" secondItem="dfF-4X-Yrb" secondAttribute="trailing" id="Vwt-LF-k6i"/>
+                            <constraint firstItem="69d-Pj-qUl" firstAttribute="trailing" secondItem="dfF-4X-Yrb" secondAttribute="trailing" constant="20" id="Vwt-LF-k6i"/>
                             <constraint firstItem="qGO-VK-UXx" firstAttribute="top" secondItem="69d-Pj-qUl" secondAttribute="top" constant="60" id="qqk-0I-IPU"/>
                             <constraint firstItem="dfF-4X-Yrb" firstAttribute="top" secondItem="69d-Pj-qUl" secondAttribute="top" constant="8" id="rcd-lb-I53"/>
                             <constraint firstItem="qGO-VK-UXx" firstAttribute="centerX" secondItem="Svj-vX-mKC" secondAttribute="centerX" id="yn1-DR-Tyi"/>
@@ -319,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJP-um-uBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1292" y="-484"/>
+            <point key="canvasLocation" x="1348" y="-696"/>
         </scene>
         <!--Create AccountVC-->
         <scene sceneID="H1F-v8-uKq">
@@ -356,7 +356,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwK-86-3fZ">
-                                <rect key="frame" x="353" y="28" width="22" height="22"/>
+                                <rect key="frame" x="333" y="28" width="22" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="DKX-0G-lAk"/>
                                     <constraint firstAttribute="width" constant="22" id="o10-Wh-zBn"/>
@@ -461,7 +461,7 @@
                             <constraint firstItem="Id9-c8-COs" firstAttribute="top" secondItem="PIc-e4-6VY" secondAttribute="top" constant="40" id="DJe-hb-99b"/>
                             <constraint firstItem="EvL-JS-tZt" firstAttribute="centerX" secondItem="RQF-bw-XwN" secondAttribute="centerX" id="DSZ-nZ-rPg"/>
                             <constraint firstItem="qKU-jP-1uW" firstAttribute="centerX" secondItem="RQF-bw-XwN" secondAttribute="centerX" id="FHk-ie-jEW"/>
-                            <constraint firstItem="PIc-e4-6VY" firstAttribute="trailing" secondItem="wwK-86-3fZ" secondAttribute="trailing" id="Vta-Dj-rZ9"/>
+                            <constraint firstItem="PIc-e4-6VY" firstAttribute="trailing" secondItem="wwK-86-3fZ" secondAttribute="trailing" constant="20" id="Vta-Dj-rZ9"/>
                             <constraint firstItem="HOv-gz-wVo" firstAttribute="centerY" secondItem="RQF-bw-XwN" secondAttribute="centerY" constant="-100" id="ZOB-Nj-wg7"/>
                             <constraint firstItem="EvL-JS-tZt" firstAttribute="top" secondItem="N6s-2I-VyK" secondAttribute="bottom" constant="4" id="hEd-wk-Zlw"/>
                             <constraint firstItem="hZ9-Vv-tDj" firstAttribute="top" secondItem="Id9-c8-COs" secondAttribute="bottom" constant="40" id="oeu-6p-yoM"/>

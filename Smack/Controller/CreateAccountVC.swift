@@ -11,24 +11,20 @@ import UIKit
 class CreateAccountVC: UIViewController {
     
     //Outlets
-    
     @IBOutlet weak var usernameTxt: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var userImg: UIImageView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
-    
     //Variables
     var avatarName = "profileDefault"
     var avatarColor = "[0.5, 0.5, 0,5, 1]"
     var bgColor : UIColor?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -104,5 +100,4 @@ class CreateAccountVC: UIViewController {
     @objc func handleTap() {
         view.endEditing(true)
     }
-    
 }

@@ -11,7 +11,6 @@ import UIKit
 class LoginVC: UIViewController {
     
     //Outlets
-    
     @IBOutlet weak var usernameTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var spinner: UIActivityIndicatorView!

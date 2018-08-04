@@ -25,7 +25,6 @@ let smackPurplePlaceholder = #colorLiteral(red: 0.3254901961, green: 0.421520113
 let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
 
 //Segues
-
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND = "unwindToChannel"
@@ -37,12 +36,11 @@ let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
 
 // Headers
-
 let HEADER = [
     "Content-Type": "application/json; charset=utf-8"
 ]
 
 let BEARER_HEADER = [
-    "Authorization":"Bearer \(AuthService.instance.authToken)",
+    "Authorization": "Bearer \(AuthService.instance.authToken)",
     "Content-Type": "application/json; charset=utf-8"
 ]
